@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف: عبدالله وماريا</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <h1 class="gold-text">دعوة زفاف أنيقة</h1>
+            <p>يسعدنا حضوركم ومشاركتنا فرحتنا</p>
+            <button id="open-btn" class="btn-gold">اضغط لفتح الدعوة</button>
+        </div>
+    </div>
+
+    <div id="main-invitation" class="invitation-container hidden">
+        
+        <div class="decor-top">✨ ⚜️ ✨</div>
+
+        <header class="wedding-names">
+            <h1 class="bride-groom">عبدالله عماد <span class="and">&</span> ماريا شاكر</h1>
+            <p class="welcome-msg">يتشرفان بدعوتكم لحضور حفل زفافهما الميمون</p>
+        </header>
+
+        <hr class="divider">
+
+        <section class="wedding-details">
+            <div class="detail-item">
+                <span class="icon">📅</span>
+                <h3>التاريخ</h3>
+                <p>12 / 12 / 2026</p>
+            </div>
+            
+            <div class="detail-item">
+                <span class="icon">🕒</span>
+                <h3>الوقت</h3>
+                <p>4:00 عصرًا</p>
+            </div>
+
+            <div class="detail-item">
+                <span class="icon">📍</span>
+                <h3>المكان</h3>
+                <p>قاعة أغصان الزيتون</p>
+            </div>
+        </section>
+
+        <section class="countdown-section">
+            <h3 class="gold-text">المتبقي على الفرحة</h3>
+            <div id="countdown" class="countdown-timer">
+                <div class="time-box"><span id="days">00</span><p>أيام</p></div>
+                <div class="time-box"><span id="hours">00</span><p>ساعات</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>دقائق</p></div>
+                <div class="time-box"><span id="seconds">00</span><p>ثواني</p></div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 class="gold-text">أجمل اللحظات</h3>
+            <div class="image-placeholder">
+                <img id="wedding-img" src="images/bride.jpg" alt="عبدالله وماريا" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <p style="display: none; color: #888; padding: 20px;">📷 مكان مخصص لصور العروسين لاحقاً (ضع صورة باسم bride.jpg داخل مجلد images)</p>
+            </div>
+        </section>
+
+        <footer class="wedding-footer">
+            <a href="https://maps.google.com" target="_blank" class="btn-gold location-btn">📍 عرض الموقع على Google Maps</a>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
